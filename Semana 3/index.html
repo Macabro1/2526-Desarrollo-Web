@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto - Semana 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Proyecto Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#tabla">Datos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Introducción al Desarrollo Web</h2>
+                <p>Este es un proyecto que integra los <strong>elementos fundamentales</strong> de HTML y CSS. A través de estos ejercicios se practica la <em>estructura semántica</em> y el diseño básico de una página.</p>
+                <h3>Lo que aprenderás</h3>
+                <ul>
+                    <li>Estructura con etiquetas semánticas.</li>
+                    <li>Inclusión de multimedia (imágenes y video).</li>
+                    <li>Creación de formularios y tablas.</li>
+                </ul>
+                <ol>
+                    <li>Configurar el entorno de desarrollo.</li>
+                    <li>Escribir código HTML válido.</li>
+                    <li>Aplicar estilos con CSS.</li>
+                    <li>Publicar en GitHub Pages.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>Contenido Multimedia</h2>
+            <article>
+                <h3>Una Imagen de Ejemplo</h3>
+                <!-- ⚠️ IMPORTANTE: Ruta relativa a la imagen desde index.html -->
+                <img src="assets/img/imagen1.jpg" alt="Imagen descriptiva de ejemplo para el proyecto" width="600">
+                <p>Esta imagen está alojada en la carpeta <code>assets/img/</code> del proyecto.</p>
+            </article>
+            <article>
+                <h3>Un Video de Ejemplo</h3>
+                <!-- ⚠️ IMPORTANTE: Ruta relativa al video desde index.html -->
+                <video controls width="600">
+                    <source src="assets/video/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <p>Este video está alojado en la carpeta <code>assets/video/</code> y tiene controles de reproducción.</p>
+            </article>
+        </section>
+
+        <section id="tabla">
+            <h2>Tabla de Ejemplo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Uso Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estructura del contenido</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Estilos y diseño visual</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Interactividad dinámica</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto creado para la actividad de la Semana 3.</p>
+        <p>Visita <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a> para más recursos sobre HTML.</p>
+        <p>&copy; 2025 - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
