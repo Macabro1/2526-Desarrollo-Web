@@ -2,106 +2,119 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto - Semana 3</title>
+    <title>Semana 3 - HTML5 Semántico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Proyecto Web</h1>
-        <nav>
+
+<header>
+    <h1>Página Web con HTML5</h1>
+    <p><strong>Semana 3</strong> – Uso de etiquetas <em>semánticas</em></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#contenido">Contenido</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="contenido">
+        <h2>Estructura del Documento</h2>
+
+        <article>
+            <h3>Etiquetas Semánticas</h3>
+            <p>
+                HTML5 introduce etiquetas semánticas como
+                <strong>header</strong>, <em>section</em> y <strong>footer</strong>
+                que permiten una mejor organización del contenido.
+            </p>
+        </article>
+
+        <article>
+            <h3>Listas</h3>
+
+            <p>Lista ordenada:</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <p>Lista desordenada:</p>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#multimedia">Multimedia</a></li>
-                <li><a href="#tabla">Datos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>Visual Studio Code</li>
+                <li>GitHub</li>
+                <li>Live Server</li>
             </ul>
-        </nav>
-    </header>
+        </article>
+    </section>
 
-    <main>
-        <section id="inicio">
-            <article>
-                <h2>Introducción al Desarrollo Web</h2>
-                <p>Este es un proyecto que integra los <strong>elementos fundamentales</strong> de HTML y CSS. A través de estos ejercicios se practica la <em>estructura semántica</em> y el diseño básico de una página.</p>
-                <h3>Lo que aprenderás</h3>
-                <ul>
-                    <li>Estructura con etiquetas semánticas.</li>
-                    <li>Inclusión de multimedia (imágenes y video).</li>
-                    <li>Creación de formularios y tablas.</li>
-                </ul>
-                <ol>
-                    <li>Configurar el entorno de desarrollo.</li>
-                    <li>Escribir código HTML válido.</li>
-                    <li>Aplicar estilos con CSS.</li>
-                    <li>Publicar en GitHub Pages.</li>
-                </ol>
-            </article>
-        </section>
+    <section id="multimedia">
+        <h2>Multimedia</h2>
 
-        <section id="multimedia">
-            <h2>Contenido Multimedia</h2>
-            <article>
-                <h3>Una Imagen de Ejemplo</h3>
-                <!-- ⚠️ IMPORTANTE: Ruta relativa a la imagen desde index.html -->
-                <img src="assets/img/imagen1.jpg" alt="Imagen descriptiva de ejemplo para el proyecto" width="600">
-                <p>Esta imagen está alojada en la carpeta <code>assets/img/</code> del proyecto.</p>
-            </article>
-            <article>
-                <h3>Un Video de Ejemplo</h3>
-                <!-- ⚠️ IMPORTANTE: Ruta relativa al video desde index.html -->
-                <video controls width="600">
-                    <source src="assets/video/video1.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
-                <p>Este video está alojado en la carpeta <code>assets/video/</code> y tiene controles de reproducción.</p>
-            </article>
-        </section>
+        <h3>Imagen</h3>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Imagen de ejemplo HTML5">
 
-        <section id="tabla">
-            <h2>Tabla de Ejemplo</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnología</th>
-                        <th>Uso Principal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Estructura del contenido</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Estilos y diseño visual</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Interactividad dinámica</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h3>Video</h3>
+        <video controls width="400">
+            <source src="https://www.youtube.com/watch?v=VyBPdEbV6Qg&t=11s" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </section>
 
-        <section id="contacto">
-            <h2>Formulario de Contacto</h2>
-            <form action="#" method="post">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <section>
+        <h2>Tabla de Tecnologías</h2>
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Uso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Estructura</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Diseño</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Interactividad</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
-    </main>
+    <section id="contacto">
+        <h2>Formulario de Contacto</h2>
 
-    <footer>
-        <p>Proyecto creado para la actividad de la Semana 3.</p>
-        <p>Visita <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs</a> para más recursos sobre HTML.</p>
-        <p>&copy; 2025 - Todos los derechos reservados.</p>
-    </footer>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" required>
+
+            <label>Correo:</label>
+            <input type="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        Sitio desarrollado para la asignatura de Desarrollo Web |
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+</footer>
+
 </body>
 </html>
