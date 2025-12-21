@@ -44,7 +44,7 @@ Se han sobrescrito varios estilos de Bootstrap, incluyendo:
 1. Subir todos los archivos a un repositorio de GitHub
 2. Activar GitHub Pages en Settings > Pages
 3. Seleccionar la rama main y la carpeta raíz
-4. La página estará disponible en `https://[usuario].github.io/[repositorio]`
+4. La página estará disponible en `https://macabro1.github.io/2526-Desarrollo-Web/Semana%204/Index.html`
 
 ## Vista Previa
 
