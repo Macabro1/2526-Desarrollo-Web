@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web con Bootstrap</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-globe-americas me-2"></i>MiSitioWeb
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5 pt-4">
+        <!-- Título Principal -->
+        <section id="inicio" class="hero-section text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3 animate-title">Bienvenido a Mi Sitio Web Moderno</h1>
+                <p class="lead mb-4">Una página responsiva creada con Bootstrap 5 y CSS3 avanzado</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#galeria" class="btn btn-primary btn-lg px-4">Explorar</a>
+                    <button class="btn btn-outline-primary btn-lg px-4" type="button" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+                        Más información
+                    </button>
+                </div>
+                
+                <!-- Contenido Collapse -->
+                <div class="collapse mt-4" id="infoExtra">
+                    <div class="card card-body">
+                        <h5 class="card-title">Información adicional</h5>
+                        <p class="card-text">Este sitio web utiliza las últimas tecnologías web: Bootstrap 5 para el diseño responsivo, CSS3 para animaciones y efectos visuales, y JavaScript para la interactividad. Todo el código está disponible en GitHub.</p>
+                        <p class="card-text">Puedes ver el repositorio del proyecto y acceder a la página desplegada en GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Principal: Grid con Cards -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Nuestros Servicios</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover">
+                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" class="card-img-top" alt="Paisaje montañoso">
+                            <div class="card-body">
+                                <h3 class="card-title">Diseño Web</h3>
+                                <p class="card-text">Creamos sitios web modernos y responsivos que se adaptan a todos los dispositivos. Utilizamos las mejores prácticas de diseño y desarrollo.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-primary btn-sm">Ver más</button>
+                                    <small class="text-muted">Desde $499</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover">
+                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" class="card-img-top" alt="Paisaje nocturno">
+                            <div class="card-body">
+                                <h3 class="card-title">Desarrollo Frontend</h3>
+                                <p class="card-text">Implementamos interfaces de usuario atractivas con HTML5, CSS3 y JavaScript. Creamos experiencias de usuario fluidas y agradables.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-primary btn-sm">Ver más</button>
+                                    <small class="text-muted">Desde $799</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover">
+                            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b" class="card-img-top" alt="Aurora boreal">
+                            <div class="card-body">
+                                <h3 class="card-title">Optimización SEO</h3>
+                                <p class="card-text">Mejoramos el posicionamiento en motores de búsqueda para aumentar la visibilidad de tu sitio web y atraer más clientes potenciales.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-primary btn-sm">Ver más</button>
+                                    <small class="text-muted">Desde $299/mes</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería con Grid de Bootstrap -->
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Galería de Imágenes</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000" class="img-fluid rounded" alt="Naturaleza 1">
+                            <div class="gallery-overlay">
+                                <h5 class="text-white">Bosque Encantado</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05" class="img-fluid rounded" alt="Naturaleza 2">
+                            <div class="gallery-overlay">
+                                <h5 class="text-white">Montañas Nevadas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07" class="img-fluid rounded" alt="Naturaleza 3">
+                            <div class="gallery-overlay">
+                                <h5 class="text-white">Cascada Natural</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario Responsivo -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Contáctanos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <form class="p-4 border rounded shadow-sm bg-white form-hover">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="servicio" class="form-label">Servicio de Interés</label>
+                                <select class="form-select" id="servicio">
+                                    <option selected>Selecciona un servicio</option>
+                                    <option value="1">Diseño Web</option>
+                                    <option value="2">Desarrollo Frontend</option>
+                                    <option value="3">Optimización SEO</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentarios" class="form-label">Comentarios</label>
+                                <textarea class="form-control" id="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="bi bi-send me-2"></i>Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer text-center bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">MiSitioWeb</h5>
+                    <p class="small">Creamos experiencias web modernas y responsivas utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li><a href="#galeria" class="text-white text-decoration-none">Galería</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <p class="mb-0 small">&copy; 2023 Mi Sitio Web con Bootstrap. Todos los derechos reservados.</p>
+            <p class="small">Proyecto para demostración de CSS3 avanzado y Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script personalizado para interacciones -->
+    <script>
+        // Agregar clase active al enlace de navegación actual
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Validación básica del formulario
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                const nombre = document.getElementById('nombre').value;
+                const email = document.getElementById('email').value;
+                
+                if (!nombre || !email) {
+                    e.preventDefault();
+                    alert('Por favor, completa los campos obligatorios (Nombre y Email).');
+                } else {
+                    e.preventDefault();
+                    alert('¡Formulario enviado con éxito! En una implementación real, los datos se enviarían al servidor.');
+                    form.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
